@@ -1,0 +1,358 @@
+﻿body {
+    font-family: 'メイリオ', Meiryo, 'MS UI Gothic';
+}
+.wrap_site {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.home {
+    margin-top: 50px;
+}
+
+.home h1 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.home ul li a {
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    background: linear-gradient(to right, #3F51B5, #2196F3);
+    transition: all 0.35s ease 0s;
+    -webkit-transition: all 0.35s ease 0s;
+}
+
+.home ul li {
+    width: 100%;
+    float: left;
+    list-style: none;
+    margin-bottom: 20px;
+}
+.nav_menu li input {
+    height: 48px;
+    position: relative;
+    margin-left: 20px;
+    width: 225px;
+    font-size: 20px;
+    padding: 10px 20px;
+        font-weight: bold;
+}
+.home ul li a:hover {
+    background: linear-gradient(to right, #2196F3 , #3F51B5);
+    text-decoration: none;
+    margin-left: 10px;
+        box-shadow: 0 0 3px 1px #9c2921;
+}
+
+.nav_menu {
+    width: 100%;
+    float: left;
+}
+
+.nav_menu ul {
+    padding: 0;
+}
+h1.title {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.on_form {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.top_form {
+    width: 100%;
+    float: left;
+}
+
+.main_form {
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+}
+
+.item_topform1 {
+    width: 15%;
+}
+
+.item_topform2 {
+    width: 15%;
+}
+
+.item_topform3 {
+    width: 15%;
+    float: left;
+}
+
+.item_topform4 {
+    width: 20%;
+}
+
+.item_topform {
+    float: left;
+    padding-right: 1%;
+}
+
+.item_topform5 {
+    width: 20%;
+}
+
+.item_topform6 {
+    width: 15%;
+    text-align: right;
+}
+
+button.btn {
+    display: inline-block;
+    font-size: 20px;
+    padding: 5px 20px;
+    color: #fff;
+    background: #2196F3;
+    transition: all 0.35s ease 0s;
+    -webkit-transition: all 0.35s ease 0s;
+}
+
+button.btn:hover {
+    background: #1385e0;
+    color: #fff;
+}
+
+.item_topform span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+select.select {
+    width: 100%;
+    height: 40px !important;
+    border: 2px solid #607D8B;
+}
+
+.item_topform1 input#date {
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 2px solid #607D8B;
+}
+
+table.table {
+    border: 1px solid #ddd;
+}
+
+table.table th {
+    border: 1px solid #ddd;
+}
+
+table.table tr {
+    border: none;
+}
+
+.table>thead>tr>th {
+    border-bottom: 1px solid #ddd;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    border: 1px solid #607d8b;
+}
+
+.table>caption+thead>tr:first-child>td, .table>caption+thead>tr:first-child>th, .table>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, .table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th {
+    border-top: 1px solid #607d8b;
+}
+.item_topform6 button.btn {
+    margin-top: 25px;
+}
+
+.table-responsive {
+    max-height: 400px;
+}
+.main_form table.table tr td:first-child {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.main_form table.table tr th:first-child {
+    text-align: center;
+}
+.bottom_form {
+    width: 100%;
+    float: left;
+    padding: 10px 0 50px;
+}
+
+button.btn.btn-left {
+    float: left;
+    margin-left: 5%;
+}
+
+button.btn.btn-right {
+    float: right;
+    margin-right: 5%;
+}
+
+.main_device {
+    width: 100%;
+    float: left;
+        margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+.item_device {
+    float: left;
+    width: 20%;
+}
+
+.device_content {
+    width: 68%;
+    float: left;
+    margin-right: 2%;
+}
+.list_current {
+    width: 60%;
+    float: left;
+}
+
+.select_room {
+    width: 35%;
+    float: right;
+}
+
+.list_current p {
+    font-size: 20px;
+}
+
+.list_current p b {
+    margin-left: 15px;
+}
+
+.top_device_current {
+    width: 100%;
+    float: left;
+}
+.button_device {
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+}
+.table_list {
+    width: 100%;
+    float: left;
+    margin-top: 55px;
+}
+
+.table_list tr td {
+    height: 35px;
+    font-size: 17px;
+}
+.device_current {
+    width: 30%;
+    float: left;
+}
+
+.item_device span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.value_device {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.device_content_top {
+    width: 100%;
+    float: left;
+}
+
+.device_content_main {
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+    background: #f1f1f1;
+    padding: 10px;
+}
+
+.table_device {
+    width: 30%;
+    float: left;
+    padding: 15px;
+    border: 2px solid #2196F4;
+    background: #fff;
+}
+
+.table_device ul {
+    margin-bottom: 0;
+    padding-left: 15px;
+}
+
+.table_device ul li {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.item_device input {
+    max-width: 80%;
+    font-size: 15px;
+}
+.table_device ul li:last-child {
+    margin-bottom: 0;
+}
+.device1 {
+    width: 15%;
+    padding-bottom: 40%;
+    background: #607D8B;
+}
+
+.device2 {
+    width: 10%;
+    padding-bottom: 10%;
+    background: #00BCD4;
+    border-radius: 50%;
+}
+
+.device3 {
+    width: 25%;
+    padding-bottom: 15%;
+    background: #F44336;
+}
+
+.device4 {
+    width: 15%;
+    padding-bottom: 25%;
+    background: #CDDC39;
+}
+.on_device {
+    width: 68%;
+    float: left;
+    height: 400px;
+    overflow: hidden;
+    margin-right: 2%;
+    padding: 10px;
+    border: 2px solid #058bf7;
+}
+
+@media screen and (max-width: 767px) {
+h1.title {
+    font-size: 30px;
+}
+
+.item_topform {
+    width: 100%;
+    margin-bottom: 25px;
+}
+.home h1 {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.nav_menu li input {
+    margin-left: 0;
+    margin-top: 5px;
+}
+}

@@ -1,0 +1,5 @@
+D:\GITHUB\Operoman\Operoman\bin\Operoman.dll
+D:\GITHUB\Operoman\Operoman\bin\Operoman.pdb
+D:\GITHUB\Operoman\Operoman\obj\Debug\Operoman.dll
+D:\GITHUB\Operoman\Operoman\obj\Debug\Operoman.pdb
+D:\GITHUB\Operoman\Operoman\obj\Debug\Operoman.csprojResolveAssemblyReference.cache

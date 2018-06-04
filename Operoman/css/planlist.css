@@ -1,0 +1,78 @@
+﻿@charset "UTF-8";
+body {
+    font-family: 'メイリオ', Meiryo, 'MS UI Gothic';    
+}
+.wrap_site {
+    margin: 0 auto;
+}
+h1.title {
+    margin-top: 50px;
+    text-align: center;
+}
+.on_form {
+    margin-top: 40px;
+}
+
+.top_form {
+    width: 100%;
+    background-color:red;
+    float: left;
+}
+
+.main_form {
+    /*float: left;*/
+    /*margin-top: 30px;*/
+    background-color:#ffd800;
+}
+.bottom_form {
+    /*float: left;*/
+    padding: 10px 0 50px;
+    background-color:#00ff90;
+}
+.item_topform {
+    float: left;
+    padding-right: 1%;
+}
+.item_topform1 {
+    width: 15%;
+}
+
+.item_topform2 {
+    width: 15%;
+}
+
+.item_topform3 {
+    width: 15%;
+}
+
+.item_topform4 {
+    width: 20%;
+}
+
+.item_topform5 {
+    width: 20%;
+}
+
+.item_topform6 {
+    width: 15%;
+    text-align: right;
+    clear: both;
+}
+.item_topform span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+select.select {
+    width: 100%;
+    height: 40px !important;
+    border: 2px solid #607D8B;
+}
+
+.item_topform1 input#date {
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 2px solid #607D8B;
+}
