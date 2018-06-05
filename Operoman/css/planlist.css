@@ -1,38 +1,47 @@
 ﻿@charset "UTF-8";
+
 body {
-    font-family: 'メイリオ', Meiryo, 'MS UI Gothic';    
+    font-family: 'メイリオ', Meiryo, 'MS UI Gothic';
+    margin: 0;
 }
+
 .wrap_site {
     margin: 0 auto;
+    width: 95%;
 }
+
 h1.title {
-    margin-top: 50px;
+    /*margin-top: 50px;*/
     text-align: center;
 }
+
 .on_form {
-    margin-top: 40px;
+    /*margin-top: 40px;*/
 }
 
 .top_form {
     width: 100%;
-    background-color:red;
+    background-color: red;
     float: left;
 }
 
 .main_form {
-    /*float: left;*/
-    /*margin-top: 30px;*/
-    background-color:#ffd800;
+    float: left;
+    margin-top: 30px;
+    background-color: #ffd800;
 }
+
 .bottom_form {
     /*float: left;*/
-    padding: 10px 0 50px;
-    background-color:#00ff90;
+    /*padding: 10px 0 50px;*/
+    background-color: #00ff90;
 }
+
 .item_topform {
     float: left;
     padding-right: 1%;
 }
+
 .item_topform1 {
     width: 15%;
 }
@@ -54,10 +63,10 @@ h1.title {
 }
 
 .item_topform6 {
-    width: 15%;
+    width: 9%;
     text-align: right;
-    clear: both;
 }
+
 .item_topform span {
     font-size: 20px;
     font-weight: 500;
@@ -77,3 +86,106 @@ select.select {
     border: 2px solid #607D8B;
 }
 
+button.btn {
+    display: inline-block;
+    font-size: 20px;
+    padding: 5px 20px;
+    color: #fff;
+    background: #2196F3;
+    transition: all 0.35s ease 0s;
+    -webkit-transition: all 0.35s ease 0s;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+    button.btn:hover {
+        background: #1385e0;
+        color: #fff;
+    }
+
+.item_topform6 button.btn {
+    margin-top: 33px;
+}
+
+table.table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    background-color: #0070C0;
+    width: 100%;
+}
+
+    table.table > thead > tr > th {
+        border: 1px solid #A6A6A6;
+        color: white;
+        text-align: center;
+        font-size: 12pt;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        font-weight: normal;
+    }
+
+    table.table > tbody > tr > td {
+        border: 1px solid #A6A6A6;
+        color: #000000;
+        background-color: #fff;
+        text-align: center;
+        font-size: 12pt;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+    }
+
+        table.table > thead > tr > th:nth-child(1), table.table > tbody > tr > td:nth-child(1) {
+            width: 6%;
+        }
+
+        table.table > thead > tr > th:nth-child(2), table.table > tbody > tr > td:nth-child(2) {
+            width: 8%;
+        }
+
+        table.table > thead > tr > th:nth-child(3), table.table > tbody > tr > td:nth-child(3) {
+            width: 10%;
+        }
+
+        table.table > thead > tr > th:nth-child(4), table.table > tbody > tr > td:nth-child(4) {
+            width: 10%;
+        }
+
+        table.table > thead > tr > th:nth-child(5), table.table > tbody > tr > td:nth-child(5) {
+            width: 8%;
+        }
+
+        table.table > thead > tr > th:nth-child(6), table.table > tbody > tr > td:nth-child(6) {
+            width: 8%;
+        }
+
+        table.table > thead > tr > th:nth-child(7), table.table > tbody > tr > td:nth-child(7) {
+            width: 30%;
+        }
+
+        table.table > thead > tr > th:nth-child(8), table.table > tbody > tr > td:nth-child(8) {
+            width: 10%;
+        }
+
+        table.table > thead > tr > th:nth-child(9), table.table > tbody > tr > td:nth-child(9) {
+            width: 10%;
+        }
+
+.ifram_table {
+    width: 100%;
+    border: none;
+    margin-top: -1px;
+    height: calc(100vh - 330px);
+}
+
+@media screen and (max-width: 767px) {
+    h1.title {
+        font-size: 30px;
+    }
+
+    .item_topform {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+}

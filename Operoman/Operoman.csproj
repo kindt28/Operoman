@@ -84,6 +84,8 @@
     <Content Include="page\KizaiManager.aspx" />
     <Content Include="page\Menu.aspx" />
     <Content Include="page\PlanList.aspx" />
+    <Content Include="page\PlanList.js" />
+    <Content Include="page\PlanListdetail.aspx" />
     <Content Include="page\SurgeryRoomMana.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -91,7 +93,9 @@
     <Compile Include="common\AspPage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="common\KinAspPage.cs" />
+    <Compile Include="common\KinAspPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="common\DBManager.cs" />
     <Compile Include="common\TTCommon.cs" />
     <Compile Include="common\TTConfig.cs" />
@@ -144,6 +148,13 @@
     </Compile>
     <Compile Include="page\PlanList.aspx.designer.cs">
       <DependentUpon>PlanList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\PlanListdetail.aspx.cs">
+      <DependentUpon>PlanListdetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\PlanListdetail.aspx.designer.cs">
+      <DependentUpon>PlanListdetail.aspx</DependentUpon>
     </Compile>
     <Compile Include="page\SurgeryRoomMana.aspx.cs">
       <DependentUpon>SurgeryRoomMana.aspx</DependentUpon>
