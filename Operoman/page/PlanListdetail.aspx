@@ -10,7 +10,7 @@
     <script src="../js/ttCookie_1.0.0.js"></script>
     <script src="../js/ttGuard_1.0.0.js"></script>
     <script src="../js/common.js"></script>
-
+    <script src="PlanListDetail.js"></script>
     <link href="../css/ttGuard_1.0.0.css" rel="stylesheet" />
     <link href="../css/planlist.css" rel="stylesheet" />
     <title>手術室配置管理システム</title>
@@ -19,7 +19,7 @@
     <form id="form1" runat="server" style="height: 100%;">
         <div id="divDetailContiner" runat="server" >
             <table id="table_detail_id" class="table">
-                <script>
+               <%-- <script>
                     for (var i = 1; i <= 20; i++) {
                         document.write("<tr>");
                         document.write("<td>" + i + "</td>");
@@ -33,9 +33,9 @@
                         document.write("<td>担当看護師" + i + "</td>");
                         document.write("</tr>");
                     }
-                          </script>
+                          </script>--%>
 
-               <%-- <tr>
+                <tr>
                     <td>No</td>
                     <td>診療科</td>
                     <td>開始予定日時</td>
@@ -45,7 +45,7 @@
                     <td>術式</td>
                     <td>執刀医</td>
                     <td>担当看護師</td>
-                </tr>--%>
+                </tr>
             </table>
         </div>
     </form>

@@ -7,11 +7,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name='viewport' content='width=device-width, minimum-scale=1, maximum-scale=1, initial-scale=1, user-scalable=no' />
     <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/tableSort.js"></script>
     <script src="../js/ttCookie_1.0.0.js"></script>
     <script src="../js/ttGuard_1.0.0.js"></script>
+    <script src="../js/ttMessage_1.0.0.js"></script>
     <script src="../js/common.js"></script>
     <script src="PlanList.js"></script>
     <link href="../css/ttGuard_1.0.0.css" rel="stylesheet" />
+    <link href="../css/ttMessage_1.0.0.css" rel="stylesheet" />
     <link href="../css/planlist.css" rel="stylesheet" />
     <title>手術室配置管理システム</title>
 </head>
@@ -78,7 +81,7 @@
                             </div>
                         </div>
                         <div class="item_topform item_topform6">
-                            <button type="button" class="btn">更新</button>
+                            <button id="btn_update_id" type="button" class="btn">更新</button>
                         </div>
                     </div>
                     <div class="main_form">
@@ -86,15 +89,15 @@
                             <table id="table_hed_id" class="table">
                                 <thead>
                                     <tr>
-                                        <th>No</th>
-                                        <th>診療科</th>
-                                        <th>開始予定日時</th>
-                                        <th>終了予定日時</th>
-                                        <th>状況</th>
-                                        <th>手術室</th>
-                                        <th>術式</th>
-                                        <th>執刀医</th>
-                                        <th>担当看護師</th>
+                                        <th data-key="number" data-column="0">No</th>
+                                        <th data-key="string" data-column="1">診療科</th>
+                                        <th data-key="date" data-column="2">開始予定日時</th>
+                                        <th data-key="date" data-column="3">終了予定日時</th>
+                                        <th data-key="string" data-column="4">状況</th>
+                                        <th data-key="string" data-column="5">手術室</th>
+                                        <th data-key="string" data-column="6">術式</th>
+                                        <th data-key="string" data-column="7">執刀医</th>
+                                        <th data-key="string" data-column="8">担当看護師</th>
                                     </tr>
                                 </thead>
                             </table>
