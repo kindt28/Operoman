@@ -23,7 +23,9 @@ var JSC_DEBUG_ON    = true;
 var JSC_DEBUG_OFF   = false;
 var JSC_DEBUG_SW    = JSC_DEBUG_OFF;
 //
-var SCROLL_BAR_WIDTH            = "17px";
+var SCROLL_BAR_WIDTH = "17px";
+var JSC_COOKIE_PARAM_LV1_ID = "LV1";
+var JSC_COOKIE_ARRAY_PARAM_SEP = "\v";
 //
 
 // -----------------------------------------------------------------

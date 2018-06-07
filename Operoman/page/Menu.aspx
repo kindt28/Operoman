@@ -7,12 +7,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name='viewport' content='width=device-width, minimum-scale=1, maximum-scale=1, initial-scale=1, user-scalable=no' />
     <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/datepicker.js"></script>
     <script src="../js/ttCookie_1.0.0.js"></script>
     <script src="../js/ttGuard_1.0.0.js"></script>
     <script src="../js/common.js"></script>
     <script src="Menu.js"></script>
     <link href="../css/ttGuard_1.0.0.css" rel="stylesheet" />
-    <link href="../css/planlist.css" rel="stylesheet" />
+    <link href="../css/datePicker.css" rel="stylesheet" />
+    <link href="../css/menu.css" rel="stylesheet" />
     <title>手術室配置管理システム</title>
 </head>
 <body>
@@ -24,10 +26,10 @@
                         <h1>手術室配置管理システム</h1>
                         <div class="nav_menu">
                             <ul>
-                                <li><a id="plan_link_id" href="#">手術スケジュール一覧管理</a><input id="date" type="date" value="" /></li>
-                                <li><a href="#">配置マスタ管理</a></li>
-                                <li><a href="#">機器機材マスタ管理</a></li>
-                                <li><a href="#">手術室マスタ管理</a></li>
+                                <li><span class="menu_item" id="plan_link_id">手術スケジュール一覧管理</span><b class="dtpicker_paren"><input id="date" type="text" /></b></li>
+                                <li><span class="menu_item">配置マスタ管理</span></li>
+                                <li><span class="menu_item">機器機材マスタ管理</span></li>
+                                <li><span class="menu_item">手術室マスタ管理</span></li>
                             </ul>
                         </div>
                     </div>

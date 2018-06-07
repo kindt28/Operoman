@@ -1,0 +1,383 @@
+﻿@charset "UTF-8";
+/* line 19, ../sass/_ttCalender_1.0.0.scss */
+.ttCalendarIn {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  font-family: "メイリオ", Meiryo, "MS UI Gothic";
+  font-size: 10.5pt;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  table-layout: fixed;
+}
+/* line 31, ../sass/_ttCalender_1.0.0.scss */
+.ttCalendarIn > tbody > tr > td {
+  font-family: "メイリオ", Meiryo, "MS UI Gothic";
+  font-size: 10.5pt;
+  text-align: center;
+}
+/* line 36, ../sass/_ttCalender_1.0.0.scss */
+.ttCalendarIn > tbody > tr > td > input {
+  font-family: 'メイリオ', Meiryo, 'MS UI Gothic';
+  font-size: 12.5pt;
+  width: 100%;
+  ime-mode: disabled;
+  text-align: right;
+  border: none;
+}
+/* line 48, ../sass/_ttCalender_1.0.0.scss */
+.ttCalendarIn > tbody > tr > td:nth-child(1) > div {
+  width: 25px;
+  height: 26px;
+  background-image: url("../img/矢印2.png");
+}
+/* line 55, ../sass/_ttCalender_1.0.0.scss */
+.ttCalendarIn > tbody > tr > td:nth-child(2),
+.ttCalendarIn > tbody > tr > td:nth-child(10) {
+  width: 25px;
+}
+/* line 60, ../sass/_ttCalender_1.0.0.scss */
+.ttCalendarIn > tbody > tr > td:nth-child(3) {
+  width: 4em;
+}
+/* line 64, ../sass/_ttCalender_1.0.0.scss */
+.ttCalendarIn > tbody > tr > td:nth-child(4) {
+  width: 2em;
+  color: black;
+  font-weight: normal;
+}
+/* line 70, ../sass/_ttCalender_1.0.0.scss */
+.ttCalendarIn > tbody > tr > td:nth-child(6) {
+  width: 2em;
+}
+/* line 74, ../sass/_ttCalender_1.0.0.scss */
+.ttCalendarIn > tbody > tr > td:nth-child(7) {
+  width: 1.5em;
+  color: black;
+  font-weight: normal;
+}
+/* line 80, ../sass/_ttCalender_1.0.0.scss */
+.ttCalendarIn > tbody > tr > td:nth-child(8) {
+  width: 0px;
+}
+/* line 86, ../sass/_ttCalender_1.0.0.scss */
+.ttCalendarIn > tbody > tr > td:nth-child(9) > div {
+  width: 43px;
+  height: 23px;
+  background-image: url("../img/指定.png");
+}
+/* line 95, ../sass/_ttCalender_1.0.0.scss */
+.ttCalendarIn > tbody > tr > td:nth-child(11) > div {
+  width: 25px;
+  height: 26px;
+  background-image: url("../img/矢印1.png");
+}
+/* line 102, ../sass/_ttCalender_1.0.0.scss */
+.ttCalendarIn > tbody > tr > td:nth-child(1),
+.ttCalendarIn > tbody > tr > td:nth-child(9),
+.ttCalendarIn > tbody > tr > td:nth-child(11) {
+  cursor: pointer;
+}
+
+/* line 114, ../sass/_ttCalender_1.0.0.scss */
+.TtCalendar {
+  font-family: "メイリオ", Meiryo, "MS UI Gothic";
+  font-size: 10.5pt;
+  border-collapse: separate;
+  border-spacing: 2px;
+}
+/* line 124, ../sass/_ttCalender_1.0.0.scss */
+.TtCalendar > tbody > tr > td {
+  font-family: "メイリオ", Meiryo, "MS UI Gothic";
+  font-size: 10.5pt;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 4px 10px;
+  color: black;
+  font-weight: normal;
+}
+/* line 139, ../sass/_ttCalender_1.0.0.scss */
+.TtCalendar > tbody > tr:nth-child(1) > td {
+  background-color: #d1cdbc;
+  color: #ffffff;
+  font-weight: bolder;
+}
+/* line 148, ../sass/_ttCalender_1.0.0.scss */
+.TtCalendar > tbody > tr > td:nth-child(1) {
+  color: red;
+}
+/* line 152, ../sass/_ttCalender_1.0.0.scss */
+.TtCalendar > tbody > tr > td:nth-child(7) {
+  color: #036eb8;
+}
+/* line 159, ../sass/_ttCalender_1.0.0.scss */
+.TtCalendar > tbody > tr:nth-child(n+2) > td.other {
+  color: #dcdcdc;
+}
+/* line 163, ../sass/_ttCalender_1.0.0.scss */
+.TtCalendar > tbody > tr:nth-child(n+2) > td:hover {
+  color: #ffffff;
+  background-color: #d1cdbc;
+  cursor: pointer;
+}
+/* line 169, ../sass/_ttCalender_1.0.0.scss */
+.TtCalendar > tbody > tr:nth-child(n+2) > td.active {
+  color: #ffffff;
+  background-color: #d1cdbc;
+}
+
+/* line 17, ../sass/ttTimeStamp_1.0.0.scss */
+.tsContiner {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  font-family: 'メイリオ', Meiryo, 'MS UI Gothic';
+  font-size: 10pt;
+  position: absolute;
+  overflow: hidden;
+  border: 1px solid #d1cdbc;
+  background-color: #f7f6f4;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* line 37, ../sass/ttTimeStamp_1.0.0.scss */
+#tsLayout > tbody > tr > td {
+  font-family: 'メイリオ', Meiryo, 'MS UI Gothic';
+  font-size: 0px;
+  vertical-align: top;
+}
+/* line 43, ../sass/ttTimeStamp_1.0.0.scss */
+#tsLayout > tbody > tr > td:nth-child(1) {
+  width: 3px;
+}
+/* line 50, ../sass/ttTimeStamp_1.0.0.scss */
+#tsLayout > tbody > tr > td:nth-child(3) {
+  width: 2px;
+}
+/* line 57, ../sass/ttTimeStamp_1.0.0.scss */
+#tsLayout > tbody > tr > td:nth-child(5) {
+  width: 3px;
+}
+
+/* line 67, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCalHead {
+  margin-top: 5px;
+  border-collapse: collapse;
+  width: 100%;
+}
+/* line 76, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCalHead > tbody > tr > td {
+  font-family: 'メイリオ', Meiryo, 'MS UI Gothic';
+  font-size: 10.5pt;
+}
+/* line 80, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCalHead > tbody > tr > td > div {
+  font-family: 'メイリオ', Meiryo, 'MS UI Gothic';
+  font-size: 10.5pt;
+  overflow: hidden;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  text-align: center;
+}
+/* line 90, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCalHead > tbody > tr > td > input {
+  font-family: 'メイリオ', Meiryo, 'MS UI Gothic';
+  font-size: 12.5pt;
+  background-color: #ffffff;
+  border: none;
+  width: 100%;
+  ime-mode: disabled;
+}
+/* line 100, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCalHead > tbody > tr > td:nth-child(1) {
+  width: 25px;
+}
+/* line 103, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCalHead > tbody > tr > td:nth-child(1) > div {
+  background-image: url("../img/矢印2.png");
+}
+/* line 108, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCalHead > tbody > tr > td:nth-child(10) {
+  width: 25px;
+}
+/* line 111, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCalHead > tbody > tr > td:nth-child(10) > div {
+  background-image: url("../img/矢印1.png");
+}
+/* line 116, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCalHead > tbody > tr > td:nth-child(2),
+#tsCalHead > tbody > tr > td:nth-child(9) {
+  width: auto;
+}
+/* line 121, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCalHead > tbody > tr > td:nth-child(3) {
+  width: 4em;
+}
+/* line 125, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCalHead > tbody > tr > td:nth-child(5) {
+  width: 2em;
+}
+/* line 129, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCalHead > tbody > tr > td:nth-child(4),
+#tsCalHead > tbody > tr > td:nth-child(6) {
+  text-align: left;
+  vertical-align: bottom;
+  width: 1em;
+}
+/* line 136, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCalHead > tbody > tr > td:nth-child(7) {
+  width: 1em;
+}
+/* line 140, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCalHead > tbody > tr > td:nth-child(8) {
+  width: 43px;
+}
+/* line 143, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCalHead > tbody > tr > td:nth-child(8) > div {
+  width: 100%;
+  height: 23px;
+  background-image: url("../img/指定.png");
+}
+
+/* line 162, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCal > tbody > tr > td {
+  font-family: 'メイリオ', Meiryo, 'MS UI Gothic';
+  font-size: 10.5pt;
+  padding: 4px 10px;
+  vartical-align: middle;
+  text-align: center;
+}
+/* line 173, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCal > tbody > tr:nth-child(1) > td {
+  background-color: #d1cdbc;
+  color: #ffffff;
+  font-weight: bolder;
+}
+/* line 182, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCal > tbody > tr:nth-child(n+2) > td {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+/* line 190, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCal > tbody > tr > td:nth-child(1) {
+  color: red;
+}
+/* line 194, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCal > tbody > tr > td:nth-child(7) {
+  color: #036eb8;
+}
+/* line 201, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCal > tbody > tr > td.other {
+  color: #dcdcdc;
+}
+/* line 205, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCal > tbody > tr > td:hover {
+  color: #ffffff;
+  background-color: #d1cdbc;
+  cursor: pointer;
+}
+/* line 211, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCal > tbody > tr > td.active {
+  color: #ffffff;
+  background-color: #d1cdbc;
+}
+
+/* line 228, ../sass/ttTimeStamp_1.0.0.scss */
+#tsTim > tbody > tr > td {
+  font-family: 'メイリオ', Meiryo, 'MS UI Gothic';
+  font-size: 10.5pt;
+}
+/* line 232, ../sass/ttTimeStamp_1.0.0.scss */
+#tsTim > tbody > tr > td > input {
+  font-family: 'メイリオ', Meiryo, 'MS UI Gothic';
+  font-size: 10.5pt;
+  background-color: transparent;
+  border: none;
+  width: 3em;
+  ime-mode: disabled;
+}
+/* line 245, ../sass/ttTimeStamp_1.0.0.scss */
+#tsTim > tbody > tr:nth-child(1) > td {
+  background-color: #d1cdbc;
+  color: #ffffff;
+  font-weight: bolder;
+  vartical-align: middle;
+  text-align: center;
+  padding: 4px 10px;
+}
+/* line 257, ../sass/ttTimeStamp_1.0.0.scss */
+#tsTim > tbody > tr:nth-child(2) > td {
+  background-color: #ffffff;
+  padding: 4px 0px;
+}
+
+/* line 268, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCommand {
+  border-collapse: collapse;
+  margin-top: 10px;
+  width: 100%;
+}
+/* line 277, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCommand > tbody > tr > td {
+  font-size: 0px;
+}
+/* line 280, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCommand > tbody > tr > td > input {
+  font-family: 'メイリオ', Meiryo, 'MS UI Gothic';
+  font-size: 10.5pt;
+  color: #ffffff;
+  background-color: #d1cdbc;
+  overflow: hidden;
+  width: 60px;
+  height: 25px;
+  cursor: pointer;
+  text-align: center;
+  overflow: hidden;
+}
+/* line 293, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCommand > tbody > tr > td > #tsCmdOK {
+  background-image: url("../img/確定_25_60.png");
+  border: none;
+  height: 100%;
+}
+/* line 297, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCommand > tbody > tr > td > #tsCmdClr {
+  background-image: url("../img/クリア_25_60.png");
+}
+/* line 301, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCommand > tbody > tr > td > #tsCmdCan {
+  background-image: url("../img/キャンセル_25_60.png");
+  border: none;
+  height: 100%;
+}
+/* line 306, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCommand > tbody > tr > td:nth-child(1) {
+  width: auto;
+}
+/* line 310, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCommand > tbody > tr > td:nth-child(2) {
+  width: 25px;
+}
+/* line 314, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCommand > tbody > tr > td:nth-child(3) {
+  width: 10px;
+}
+/* line 318, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCommand > tbody > tr > td:nth-child(4) {
+  width: 25px;
+}
+/* line 322, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCommand > tbody > tr > td:nth-child(5) {
+  width: 10px;
+}
+/* line 326, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCommand > tbody > tr > td:nth-child(6) {
+  width: 25px;
+}
+/* line 330, ../sass/ttTimeStamp_1.0.0.scss */
+#tsCommand > tbody > tr > td:nth-child(7) {
+  width: 5px;
+}

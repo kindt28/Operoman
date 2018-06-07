@@ -7,7 +7,7 @@
 // ｸｯｷｰへ保存
 //      argment     ... key		[ 保存ｷｰ		]
 //					... val		[ 値 ]
-var JSC_APP_NAME = 'PC';
+var JSC_APP_NAME = 'OPEROMAN';
 function setCookie(key, val) {
     key = JSC_APP_NAME + "_" + key;
     var cokies = null;

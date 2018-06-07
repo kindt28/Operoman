@@ -11,10 +11,15 @@
     <script src="../js/ttCookie_1.0.0.js"></script>
     <script src="../js/ttGuard_1.0.0.js"></script>
     <script src="../js/ttMessage_1.0.0.js"></script>
+    <script src="../js/ttDate_1.0.0.js"></script>
+    <script src="../js/ttDlgContiner_1.0.0.js"></script>
+    <script src="../js/ttTimeStamp_1.0.0.js"></script>
     <script src="../js/common.js"></script>
     <script src="PlanList.js"></script>
     <link href="../css/ttGuard_1.0.0.css" rel="stylesheet" />
     <link href="../css/ttMessage_1.0.0.css" rel="stylesheet" />
+    <link href="../css/ttTimeStamp_1.0.0.css" rel="stylesheet" />
+    <link href="../css/ttFilter_1.0.0.css" rel="stylesheet" />
     <link href="../css/planlist.css" rel="stylesheet" />
     <title>手術室配置管理システム</title>
 </head>
@@ -28,12 +33,18 @@
                         <div class="item_topform item_topform1">
                             <span>【 開始日付 】</span>
                             <div class="value_item_topform1">
-                                <select class="select">
-                                    <option value="1">日本</option>
-                                    <option value="2">ベトナム</option>
-                                    <option value="3">韓国</option>
-                                    <option value="4">中国</option>
-                                </select>
+                                <table id="tblYearMonth" class="table_cal">
+                                    <tr>
+                                        <td id='trFltYearMonth' class="">
+                                            <div id="divExeStampFram" class="cal_fram" runat="server">
+                                                <div id="divExeStamp" class="cal_caption ">
+                                                    <span class="">2017<span>年</span>&nbsp;01<span>月</span>&nbsp;12<span>日</span></span>
+                                                </div>
+                                                <div id="btnExeStamp" class="cal_btn">&nbsp;</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
                             </div>
                         </div>
                         <div class="item_topform item_topform2">

@@ -1,7 +1,8 @@
-﻿/// <reference path="..js/jquery-3.1.1.min.js" />
-/// <reference path="..js/ttCookie_1.0.0.js" />
-/// <reference path="..js/ttGuard_1.0.0.js" />
-/// <reference path="..js/common.js" />
+﻿/// <reference path="../js/jquery-3.1.1.min.js" />
+/// <reference path="../js/ttCookie_1.0.0.js" />
+/// <reference path="../js/ttGuard_1.0.0.js" />
+/// <reference path="../js/common.js" />
+/// <reference path="../js/datepicker.js" />
 // ----------------------------------------------------------------------------------
 // - ﾌｧｲﾙ名    ： ﾛｸﾞｲﾝﾍﾟｰｼﾞ
 // - 備　考    ： ﾛｸﾞｲﾝﾍﾟｰｼﾞのjavascript処理を提供
@@ -31,10 +32,12 @@ var jsp_xxxxxx = true;
 // - 備　考：なし
 // -----------------------------------------------------------------
 function jspAddEvent() {
-    $('#plan_link_id').on('click', jscChangePage("PlanList.aspx"));
+    $('#plan_link_id').on('click', changePage);
+    var input = document.querySelector('input[id="date"]');
+
+    var picker = datepicker(input);
 }
-//function changePage() {
-//    alert("a");
-//    jscChangePage("PlanList.aspx");
-//}
+function changePage() {
+    jscChangePage("PlanList.aspx");
+}
 // ------------------------------------ EOF -----------------------------------------

@@ -1,0 +1,63 @@
+﻿@charset "UTF-8";
+
+* {
+    font-family: 'メイリオ', Meiryo, 'MS UI Gothic';
+}
+
+body {
+    margin: 0;
+}
+
+.wrap_site {
+    margin: 0 auto;
+    width: 85%;
+}
+
+.nav_menu ul {
+    padding: 0;
+}
+
+.home ul li {
+    width: 100%;
+    float: left;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.menu_item {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    background: linear-gradient(to right, #3F51B5, #2196F3);
+    transition: all 0.35s ease 0s;
+    -webkit-transition: all 0.35s ease 0s;
+}
+
+    .menu_item:hover {
+        background: linear-gradient(to right, #2196F3, #3F51B5);
+        text-decoration: none;
+        margin-left: 10px;
+        box-shadow: 0 0 3px 1px #9c2921;
+    }
+
+.dtpicker_paren {
+    position: relative;
+    height: 40px;
+    /* width:  250px; */
+}
+
+    .dtpicker_paren > input {
+        font-size: 20px;
+        padding: 8px 20px;
+        width: 150px;
+    }
+
+.datepicker {
+    /* margin-top: .5rem; */
+    position: absolute;
+    width: 280px;
+    top: 35px;
+    left: 193px;
+}
