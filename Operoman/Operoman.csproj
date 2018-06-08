@@ -65,8 +65,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\arrangedetail.css" />
+    <Content Include="css\arrangemanager.css" />
+    <Content Include="css\bootstrap.min.css" />
     <Content Include="css\custom.css" />
     <Content Include="css\home.css" />
+    <Content Include="css\kizaimanager.css" />
     <Content Include="css\menu.css" />
     <Content Include="css\planlist.css" />
     <Content Include="css\datePicker.css" />
@@ -87,6 +91,7 @@
     <Content Include="js\common.js" />
     <Content Include="js\datepicker.js" />
     <Content Include="js\jquery-3.1.1.min.js" />
+    <Content Include="js\jquery-ui.js" />
     <Content Include="js\tableSort.js" />
     <Content Include="js\ttAjax_1.0.0.js" />
     <Content Include="js\ttCookie_1.0.0.js" />
@@ -97,8 +102,11 @@
     <Content Include="js\ttTimeStamp_1.0.0.js" />
     <Content Include="ok.aspx" />
     <Content Include="page\ArrangeDetail.aspx" />
+    <Content Include="page\ArrangeDetail.js" />
     <Content Include="page\ArrangeManager.aspx" />
+    <Content Include="page\ArrangeManager.js" />
     <Content Include="page\KizaiManager.aspx" />
+    <Content Include="page\KizaiManager.js" />
     <Content Include="page\Menu.aspx" />
     <Content Include="page\Menu.js" />
     <Content Include="page\PlanList.aspx" />
@@ -185,6 +193,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\PublishProfiles\Operoman.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
