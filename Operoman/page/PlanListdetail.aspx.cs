@@ -14,8 +14,8 @@ namespace Operoman.page
         {
             HtmlTable tblList = new HtmlTable();
             divDetailContiner.Controls.Clear();
-            for (int i = 0; i < 20; i++) {
-                tblList.Controls.Add(CreateRow());
+            for (int i = 0; i < 100; i++) {
+                tblList.Controls.Add(CreateRow(""+i));
             }
             tblList.ID = "table_detail_id";
             tblList.Attributes["class"] = "table";
@@ -25,18 +25,19 @@ namespace Operoman.page
         /// <summary>
         /// 行の追加
         /// </summary>
-        public HtmlTableRow CreateRow()
+        public HtmlTableRow CreateRow(string i)
         {
+            string sDate = DateTime.Now.AddDays(Int32.Parse(i)).ToString("yyyy/MM/dd");
             HtmlTableRow row = new HtmlTableRow();
-            row.Cells.Add(CreateCell("No", "over_txt"));
-            row.Cells.Add(CreateCell("診療科", "over_txt"));
-            row.Cells.Add(CreateCell("開始予定日時", "over_txt"));
-            row.Cells.Add(CreateCell("終了予定日時", "over_txt"));
-            row.Cells.Add(CreateCell("状況", "over_txt"));
-            row.Cells.Add(CreateCell("手術室", "over_txt"));
-            row.Cells.Add(CreateCell("術式", "over_txt"));
-            row.Cells.Add(CreateCell("執刀医", "over_txt"));
-            row.Cells.Add(CreateCell("担当看護師", "over_txt"));
+            row.Cells.Add(CreateCell(i, "over_txt"));
+            row.Cells.Add(CreateCell("診療科"+i, "over_txt"));
+            row.Cells.Add(CreateCell(sDate, "over_txt"));
+            row.Cells.Add(CreateCell(sDate, "over_txt"));
+            row.Cells.Add(CreateCell("状況"+i, "over_txt"));
+            row.Cells.Add(CreateCell("手術室"+i, "over_txt"));
+            row.Cells.Add(CreateCell("術式"+i, "over_txt"));
+            row.Cells.Add(CreateCell("執刀医"+i, "over_txt"));
+            row.Cells.Add(CreateCell("担当看護師"+i, "over_txt"));
             return row;
         }
         /////////////////////////////////////////////////////////////////////////

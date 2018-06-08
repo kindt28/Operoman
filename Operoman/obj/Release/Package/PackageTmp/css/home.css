@@ -1,0 +1,126 @@
+﻿@charset "UTF-8";
+/* line 42, ../sass/_will_style.scss */
+* {
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    font-size: 0pt;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'メイリオ', Meiryo, 'MS UI Gothic';
+}
+
+/* line 53, ../sass/_will_style.scss */
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #f7f6f4;
+}
+
+/* line 62, ../sass/_will_style.scss */
+div {
+    position: fixed;
+}
+    /* line 65, ../sass/_will_style.scss */
+    div div {
+        position: static;
+    }
+
+/* line 73, ../sass/_will_style.scss */
+.btn_big_off {
+    color: #f5f5f5;
+    font-size: 16pt;
+    border-style: none;
+    background-color: none;
+    cursor: pointer;
+    width: 136px;
+    height: 56px;
+    background-image: url(../img/ﾒﾆｭｰボタンoff.png);
+}
+
+/* line 103, ../sass/_will_style.scss */
+.over_txt {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* line 30, ../sass/index.scss */
+#pid_title {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+/* line 42, ../sass/index.scss */
+#pid_body {
+    top: 40px;
+    left: calc( (100% - 600px) / 2 );
+    width: 600px;
+    height: calc( 100% - 40px );
+    overflow: hidden;
+}
+
+/* line 54, ../sass/index.scss */
+#pid_body_space {
+    width: 100%;
+    height: calc( (100% - 350px) / 2 );
+}
+
+/* line 63, ../sass/index.scss */
+#pid_body_login_continer {
+    width: 100%;
+    height: 350px;
+}
+    /* line 69, ../sass/index.scss */
+    #pid_body_login_continer > br {
+        font-size: 14pt;
+    }
+    /* line 73, ../sass/index.scss */
+    #pid_body_login_continer > #pid_login_title {
+        font-size: 18pt;
+        width: 100%;
+        text-align: center;
+    }
+    /* line 79, ../sass/index.scss */
+    #pid_body_login_continer > #pid_login_error {
+        font-size: 14pt;
+        color: #ff0000;
+        width: 100%;
+        text-align: center;
+    }
+    /* line 86, ../sass/index.scss */
+    #pid_body_login_continer > #pid_login_uid_continer,
+    #pid_body_login_continer > #pid_login_pass_continer {
+        text-align: center;
+    }
+        /* line 90, ../sass/index.scss */
+        #pid_body_login_continer > #pid_login_uid_continer > *,
+        #pid_body_login_continer > #pid_login_pass_continer > * {
+            font-size: 18pt;
+        }
+        /* line 94, ../sass/index.scss */
+        #pid_body_login_continer > #pid_login_uid_continer > #pid_txt_pass,
+        #pid_body_login_continer > #pid_login_uid_continer > #pid_txt_uid,
+        #pid_body_login_continer > #pid_login_pass_continer > #pid_txt_pass,
+        #pid_body_login_continer > #pid_login_pass_continer > #pid_txt_uid {
+            margin-left: 1em;
+            width: 20em;
+        }
+    /* line 101, ../sass/index.scss */
+    #pid_body_login_continer > #pid_login_button_continer {
+        text-align: right;
+    }
+        /* line 104, ../sass/index.scss */
+        #pid_body_login_continer > #pid_login_button_continer > * {
+            font-size: 18pt;
+        }
+        /* line 108, ../sass/index.scss */
+        #pid_body_login_continer > #pid_login_button_continer > #pid_txt_pass,
+        #pid_body_login_continer > #pid_login_button_continer > #pid_txt_uid {
+            margin-left: 1em;
+            width: 20em;
+        }

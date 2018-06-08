@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/* line 18, ../sass/ttMessage_1.0.0.scss */
+.msgContiner {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "メイリオ", Meiryo, "MS UI Gothic";
+  font-size: 16px;
+  position: absolute;
+  padding: 0px;
+  top: 100px;
+  left: 100px;
+  overflow: hidden;
+  border: 1px solid red;
+  background-color: #d1cdbc;
+  border-radius: 6px;
+}
+/* line 32, ../sass/ttMessage_1.0.0.scss */
+.msgContiner * {
+  font-family: "メイリオ", Meiryo, "MS UI Gothic";
+  font-size: 16px;
+}
+/* line 38, ../sass/ttMessage_1.0.0.scss */
+.msgContiner div {
+  position: static;
+}
+
+/* line 46, ../sass/ttMessage_1.0.0.scss */
+#msg_title {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px solid red;
+  padding-left: 3px;
+  padding-top: 1px;
+  padding-bottom: 0px;
+}
+
+/* line 55, ../sass/ttMessage_1.0.0.scss */
+#msg_title_icon {
+  height: 24px;
+  width: 31px;
+  background-color: #d2b48c;
+}
+
+/* line 64, ../sass/ttMessage_1.0.0.scss */
+#msg_message {
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+/* line 77, ../sass/ttMessage_1.0.0.scss */
+#msg_message > table > tbody > tr > td:nth-child(1) {
+  text-align: right;
+}
+
+/* line 88, ../sass/ttMessage_1.0.0.scss */
+#msg_command {
+  width: 100%;
+  overflow: hidden;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+/* line 95, ../sass/ttMessage_1.0.0.scss */
+#msg_command > ul {
+  margin: 0px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  padding: 0;
+  list-style: none;
+  float: right;
+}
+/* line 103, ../sass/ttMessage_1.0.0.scss */
+#msg_command > ul > li {
+  display: inline;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+/* line 109, ../sass/ttMessage_1.0.0.scss */
+#msg_command > ul > li > div {
+  display: block;
+  border: 1px solid #666;
+  padding-top: 3px;
+  color: #333;
+  width: 100px;
+  margin: 1px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
