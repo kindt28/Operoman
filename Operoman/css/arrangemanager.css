@@ -77,7 +77,9 @@ ul#all_device {
 }
 
     ul#all_device > li {
-        display: inline-block;
+        /*tho edit*/
+        /*display: inline-block;*/
+        display: table;
     }
 
     ul#all_device > .de_1 {
