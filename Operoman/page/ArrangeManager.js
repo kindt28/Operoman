@@ -31,7 +31,6 @@ var JSP_XXXXXX = true;
 // - 変数
 // -----------------------------------------------------------------
 var jsp_xxxxxx = true;
-
 // -----------------------------------------------------------------
 // - 関数名：ｲﾍﾞﾝﾄ登録
 // - 引　数：なし
@@ -47,6 +46,73 @@ function jspAddEvent() {
         'cursor': 'move',
         'snap': '#container'
     });
+    //
+    loadDevicesPosition();
+    //    
+    $('#btnUpdate').on('click', saveDevicesPosition);
 }
-
+//
+function getRoomInfo() {
+    var room = { width: $('.on_device').width(), height: $('.on_device').height(), offsetLeft: 10, offsetTop: 10 };
+    console.log('Room -------------------------------------------');
+    console.log(room);
+    //
+    return room;
+}
+//
+function saveDevicesPosition() {
+    var room = getRoomInfo();
+    //
+    var devices = new Array();
+    var device = new Object();
+    var sizeOfDevice = new Object();
+    var positionOfDevice = new Object();
+    //
+    $('.device').each(function (index) {
+        sizeOfDevice = { width: $(this).width(), height: $(this).height() };
+        positionOfDevice = $(this).position();
+        //
+        device.left = positionOfDevice.left - room.offsetLeft + sizeOfDevice.width / 2;
+        device.left = device.left / room.width * 100;
+        //
+        device.top = positionOfDevice.top - room.offsetTop + sizeOfDevice.height / 2;
+        device.top = device.top / room.height * 100;
+        //
+        devices.push(JSON.stringify(device));
+    });
+    //
+    localStorage.setItem('DEVICE', devices.join(';'));
+    //
+    console.log('List of Devices ------------------------------------');
+    console.log(devices);
+}
+//
+function loadDevicesPosition() {
+    var storageData = localStorage.getItem('DEVICE');
+    console.log(storageData);
+    if (storageData != null) {
+        var devices = storageData.split(';');
+        console.log('Devices ------------------------------------');
+        console.log(devices);
+        //
+        var device = new Object();
+        var sizeOfDevice = new Object();
+        //
+        var room = getRoomInfo();
+        //
+        $('.device').each(function (index) {
+            sizeOfDevice = { width: $(this).width(), height: $(this).height() };
+            //
+            device = JSON.parse(devices[index]);
+            device.left = device.left * room.width / 100;
+            device.left = device.left + room.offsetLeft - sizeOfDevice.width / 2;
+            device.top = device.top * room.height / 100;
+            device.top = device.top + room.offsetTop - sizeOfDevice.height / 2;
+            //
+            $(this).css({ left: device.left, top: device.top });
+            console.log('Device ' + index + ' ------------------------------------');
+            console.log(device);
+        });
+    }
+}
 // ------------------------------------ EOF -----------------------------------------
