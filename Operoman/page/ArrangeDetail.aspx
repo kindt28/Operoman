@@ -22,6 +22,7 @@
     <link href="../css/ttMessage_1.0.0.css" rel="stylesheet" />
     <link href="../css/ttTimeStamp_1.0.0.css" rel="stylesheet" />
     <link href="../css/ttFilter_1.0.0.css" rel="stylesheet" />
+    <link href="../css/common.css" rel="stylesheet" />
     <link href="../css/arrangedetail.css" rel="stylesheet" />
     <title>手術室配置管理システム</title>
 </head>

@@ -1,15 +1,6 @@
 ﻿@charset "UTF-8";
 
-* {
-    font-family: 'メイリオ', Meiryo, 'MS UI Gothic';
-}
-
-body {
-    margin: 0;
-}
-
 .wrap_site {
-    margin: 0 auto;
     width: 85%;
 }
 

@@ -16,6 +16,7 @@
     <script src="Menu.js"></script>
     <link href="../css/ttGuard_1.0.0.css" rel="stylesheet" />
     <link href="../css/datePicker.css" rel="stylesheet" />
+    <link href="../css/common.css" rel="stylesheet" />
     <link href="../css/menu.css" rel="stylesheet" />
     <title>手術室配置管理システム</title>
 </head>

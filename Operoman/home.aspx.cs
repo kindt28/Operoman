@@ -63,7 +63,8 @@ namespace Operoman
         /// <param name="e">ｲﾍﾞﾝﾄ引数</param>
         protected void pid_login_button_Click(object sender, EventArgs e)
         {
-            OnEventExecute("pid_login_button_Click", OnLoginButtonClick);
+            //OnEventExecute("pid_login_button_Click", OnLoginButtonClick);
+            OnLoginButtonClick();
         }
         /////////////////////////////////////////////////////////////////////////
         /// <summary>
@@ -98,10 +99,10 @@ namespace Operoman
                     if ((sResult = StaffCheck(out sStfCd, out sStfNm)) == "")
                     {
                         // ﾛｸﾞｲﾝ成功
-                        m_log.Infomation("ログイン成功",
-                                            string.Format("[{0}]{1}がログインしました。",
-                                                                sStfCd,
-                                                                sStfNm));
+                        //m_log.Infomation("ログイン成功",
+                        //                    string.Format("[{0}]{1}がログインしました。",
+                        //                                        sStfCd,
+                        //                                        sStfNm));
                         SetCookie(COOKIE_STF_CD, sStfCd);
                         SetCookie(COOKIE_STF_NM, sStfNm);
                         Response.Redirect("page/Menu.aspx");

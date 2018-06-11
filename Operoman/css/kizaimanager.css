@@ -1,23 +1,5 @@
 ﻿@charset "UTF-8";
 
-* {
-    font-family: 'メイリオ', Meiryo, 'MS UI Gothic';
-}
-
-body {
-    margin: 0;
-}
-
-.wrap_site {
-    margin: 0 auto;
-    width: 95%;
-}
-
-h1.title {
-    margin-top: 30px;
-    text-align: center;
-}
-
 .main_device {
     width: 100%;
     float: left;

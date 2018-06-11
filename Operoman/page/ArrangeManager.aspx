@@ -22,6 +22,7 @@
     <link href="../css/ttMessage_1.0.0.css" rel="stylesheet" />
     <link href="../css/ttTimeStamp_1.0.0.css" rel="stylesheet" />
     <link href="../css/ttFilter_1.0.0.css" rel="stylesheet" />
+    <link href="../css/common.css" rel="stylesheet" />
     <link href="../css/arrangemanager.css" rel="stylesheet" />
     <title>手術室配置管理システム</title>
 </head>
@@ -30,6 +31,37 @@
         <div class="wrap_site">
             <div class="device_page">
                 <h1 class="title">配置マスタ管理画面案</h1>
+                <div class="list_table">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>配置マスタコード</th>
+                                <th>診療科</th>
+                                <th>術式</th>
+                                <th>手術室</th>
+                                <th>執刀医</th>
+                                <th>有効開始日</th>
+                                <th>有効終了日</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <script>
+                                for (var i = 1; i <= 20; i++) {
+                                    document.write("<tr>");
+                                    document.write("<td></td>");
+                                    document.write("<td></td>");
+                                    document.write("<td></td>");
+                                    document.write("<td></td>");
+                                    document.write("<td></td>");
+                                    document.write("<td></td>");
+                                    document.write("<td></td>");
+                                    document.write("</tr>");
+                                }
+                            </script>
+                        </tbody>
+                    </table>
+                </div>
                 <div id="device2" class="main_device">
                     <div id="device2_current" class="device_current">
                         <div class="dev2_list">
@@ -82,7 +114,7 @@
                                     </table>
                                 </div>
                             </div>
-                        </div>                        
+                        </div>
                     </div>
                     <div class="device_content">
 

@@ -68,6 +68,7 @@
     <Content Include="css\arrangedetail.css" />
     <Content Include="css\arrangemanager.css" />
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\common.css" />
     <Content Include="css\custom.css" />
     <Content Include="css\home.css" />
     <Content Include="css\kizaimanager.css" />
