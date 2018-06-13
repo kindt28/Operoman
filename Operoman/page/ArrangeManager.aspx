@@ -32,65 +32,98 @@
             <div class="device_page">
                 <h1 class="title">配置マスタ管理画面案</h1>
                 <div class="list_table">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>配置マスタコード</th>
-                                <th>診療科</th>
-                                <th>術式</th>
-                                <th>手術室</th>
-                                <th>執刀医</th>
-                                <th>有効開始日</th>
-                                <th>有効終了日</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-
-                            <script>
-                                for (var i = 1; i <= 20; i++) {
-                                    document.write("<tr>");
-                                    document.write("<td></td>");
-                                    document.write("<td></td>");
-                                    document.write("<td></td>");
-                                    document.write("<td></td>");
-                                    document.write("<td></td>");
-                                    document.write("<td></td>");
-                                    document.write("<td></td>");
-                                    document.write("</tr>");
-                                }
-                            </script>
-                        </tbody>
-                    </table>
+                    <p>【配置マスタ一覧】</p>
+                    <div>
+                        <table id="id_table_head" class="table table_head table_haichi">
+                            <thead>
+                                <tr>
+                                    <th>配置マスタコード</th>
+                                    <th>診療科</th>
+                                    <th>術式</th>
+                                    <th>手術室</th>
+                                    <th>執刀医</th>
+                                    <th>有効開始日</th>
+                                    <th>有効終了日</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div id="id_div_table_detail" class="div_table_detail">
+                        <table id="id_table_body" class="table table_body table_haichi">
+                            <tbody>
+                                <script>
+                                    for (var i = 1; i <= 20; i++) {
+                                        document.write("<tr>");
+                                        document.write("<td></td>");
+                                        document.write("<td></td>");
+                                        document.write("<td></td>");
+                                        document.write("<td></td>");
+                                        document.write("<td></td>");
+                                        document.write("<td></td>");
+                                        document.write("<td></td>");
+                                        document.write("</tr>");
+                                    }
+                                </script>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
                 <div id="device2" class="main_device">
                     <div id="device2_current" class="device_current">
                         <div class="dev2_list">
                             <div class="dev2_item">
+                                <div class="dev2_item_left">
+                                    <p>【開始日】</p>
+                                    <input type="text" value="" />
+                                </div>
+                                <div class="dev2_item_right">
+                                    <p>【終了日】</p>
+                                    <input type="text" value="" />
+                                </div>
+                            </div>
+                            <div class="dev2_item">
                                 <p>【術式】</p>
                                 <input type="text" value="" />
                             </div>
                             <div class="dev2_item">
-                                <p>【診療科】</p>
-                                <select class="select">
-                                    <option value="1">日本</option>
-                                    <option value="2">ベトナム</option>
-                                    <option value="3">韓国</option>
-                                    <option value="4">中国</option>
-                                </select>
+                                <div class="dev2_item_left">
+                                    <p>【診療科】</p>
+                                    <select class="select">
+                                        <option value="1">日本</option>
+                                        <option value="2">ベトナム</option>
+                                        <option value="3">韓国</option>
+                                        <option value="4">中国</option>
+                                    </select>
+                                </div>
+                                <div class="dev2_item_right">
+                                    <p>【配置マスタコード】</p>
+                                    <input type="text" value="" />
+                                </div>
                             </div>
                             <div class="dev2_item">
-                                <p>【手術室】</p>
-                                <select class="select">
-                                    <option value="1">日本</option>
-                                    <option value="2">ベトナム</option>
-                                    <option value="3">韓国</option>
-                                    <option value="4">中国</option>
-                                </select>
+                                <div class="dev2_item_left">
+                                    <p>【手術室】</p>
+                                    <select class="select">
+                                        <option value="1">日本</option>
+                                        <option value="2">ベトナム</option>
+                                        <option value="3">韓国</option>
+                                        <option value="4">中国</option>
+                                    </select>
+                                </div>
+                                <div class="dev2_item_right">
+                                    <p>【執刀医】</p>
+                                    <select class="select">
+                                        <option value="1">日本</option>
+                                        <option value="2">ベトナム</option>
+                                        <option value="3">韓国</option>
+                                        <option value="4">中国</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="dev2_item">
                                 <p>【機器一覧】</p>
                                 <div class="table_list">
-                                    <table class="table">
+                                    <table class="table table_kiki">
                                         <thead>
                                             <tr>
                                                 <th>機器コード</th>

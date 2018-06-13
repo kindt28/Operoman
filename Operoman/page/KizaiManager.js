@@ -47,6 +47,34 @@ function jspAddEvent() {
         'cursor': 'move',
         'snap': '#container'
     });
+    OnJspListContinerResize();
 }
-
+// -----------------------------------------------------------------
+// - 関数名：ｺﾝﾃﾅのﾘｻｲｽﾞ
+// - 引　数：なし
+// - 戻り値：なし
+// - 備　考：なし
+// -----------------------------------------------------------------
+function OnJspListContinerResize(evt) {
+    var sSub = "";
+    var $Continer;
+    var $List;
+    //
+    try {
+        $Continer = $('#id_div_table_detail');
+        if ($Continer.length > 0) {
+            $List = $('#id_table_body');
+            if ($List.length > 0) {
+                sSub = ($Continer.height() >= $List.outerHeight(true) ? "0px" : SCROLL_BAR_WIDTH);
+            }
+        }
+        $('#id_table_head').css('width', 'calc(100% - ' + sSub + ')');
+    }
+    catch (ex) {
+        jscDEBUGExceptionAlert(ex);
+    }
+    finally {
+        // Nop
+    }
+}
 // ------------------------------------ EOF -----------------------------------------
