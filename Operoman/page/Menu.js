@@ -35,7 +35,7 @@ function jspAddEvent() {
     $('#plan_link_id').on('click', { page: 'PlanList.aspx' }, changePage);
     $('#arrangemana_link_id').on('click', { page: 'ArrangeManager.aspx' }, changePage);
     $('#kizai_link_id').on('click', { page: 'KizaiManager.aspx' }, changePage);
-
+    $('#surgeryroommana_link_id').on('click', { page: 'SurgeryRoomMana.aspx' }, changePage);
     var input = document.querySelector('input[id="date"]');
     var picker = datepicker(input);
 }

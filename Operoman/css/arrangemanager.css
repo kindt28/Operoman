@@ -1,7 +1,7 @@
 ﻿@charset "UTF-8";
 
 .list_table, .dev2_item, .dev2_item_left, .dev2_item_right > p {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -41,6 +41,15 @@ table.table_haichi > thead > tr > th:nth-child(6), table.table_haichi > tbody > 
 
 table.table_haichi > thead > tr > th:nth-child(7), table.table_haichi > tbody > tr > td:nth-child(7) {
     width: 12%;
+}
+
+
+table.table_kiki > thead > tr > th:nth-child(1), table.table_kiki > tbody > tr > td:nth-child(1) {
+    width: 20%;
+}
+
+table.table_kiki > thead > tr > th:nth-child(2), table.table_kiki > tbody > tr > td:nth-child(2) {
+    width: 80%;
 }
 
 .main_device {

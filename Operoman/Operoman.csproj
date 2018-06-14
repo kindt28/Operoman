@@ -75,6 +75,7 @@
     <Content Include="css\menu.css" />
     <Content Include="css\planlist.css" />
     <Content Include="css\datePicker.css" />
+    <Content Include="css\SurgeryRoomMana.css" />
     <Content Include="css\ttFilter_1.0.0.css" />
     <Content Include="css\ttGuard_1.0.0.css" />
     <Content Include="css\ttMessage_1.0.0.css" />
@@ -115,6 +116,7 @@
     <Content Include="page\PlanListdetail.aspx" />
     <Content Include="page\PlanListDetail.js" />
     <Content Include="page\SurgeryRoomMana.aspx" />
+    <Content Include="page\SurgeryRoomMana.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

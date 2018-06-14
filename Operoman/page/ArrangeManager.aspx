@@ -195,7 +195,7 @@
                 <div class="button_device">
                     <div class="button-list-left">
                         <button type="button" class="btn btn-left1">戻る</button>
-                        <button type="button" class="btn btn-right">削除</button>
+                        <%--<button type="button" class="btn btn-right">削除</button>--%>
                     </div>
                     <div class="button-list-right">
                         <button type="button" class="btn btn-left2 " id="btnUpdate">修正</button>

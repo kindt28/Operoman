@@ -23,6 +23,7 @@ table.table {
     border-collapse: collapse;
     background-color: #0070C0;
     width: 100%;
+    margin-bottom: 0px;
 }
 
     table.table > thead > tr > th {
@@ -34,6 +35,7 @@ table.table {
         padding-bottom: 5px;
         padding-left: 5px;
         font-weight: normal;
+        /*border-left: none;*/
     }
 
     table.table > tbody > tr > td {
@@ -46,4 +48,9 @@ table.table {
         padding-bottom: 5px;
         padding-left: 5px;
         height: 30px;
+        /*border-left: none;*/
     }
+
+        table.table > thead > tr > th:nth-child(1), table.table > tbody > tr > td:nth-child(1) {
+            /*border-left:none;*/
+        }

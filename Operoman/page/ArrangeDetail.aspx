@@ -37,7 +37,7 @@
                             <div class="item_device item_device1">
                                 <span>【日付】</span>
                                 <div class="value_device">
-                                    <input id="date" type="text" readonly value="" />
+                                    <input id="date" type="text" value="" />
                                 </div>
                             </div>
                             <div class="item_device item_device2">
