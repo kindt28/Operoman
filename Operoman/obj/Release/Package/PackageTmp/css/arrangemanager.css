@@ -1,21 +1,55 @@
 ﻿@charset "UTF-8";
 
-* {
-    font-family: 'メイリオ', Meiryo, 'MS UI Gothic';
+.list_table, .dev2_item, .dev2_item_left, .dev2_item_right > p {
+    font-size: 18px;
+    font-weight: 500;
 }
 
-body {
-    margin: 0;
+.table_head {
+    margin-bottom: -1px;
 }
 
-.wrap_site {
-    margin: 0 auto;
-    width: 95%;
+.div_table_detail {
+    height: 200px;
+    overflow: auto;
+    border-bottom: 1px solid #A6A6A6;
 }
 
-h1.title {
-    margin-top: 30px;
-    text-align: center;
+table.table_haichi > thead > tr > th:nth-child(1), table.table_haichi > tbody > tr > td:nth-child(1) {
+    width: 14%;
+}
+
+table.table_haichi > thead > tr > th:nth-child(2), table.table_haichi > tbody > tr > td:nth-child(2) {
+    width: 10%;
+}
+
+table.table_haichi > thead > tr > th:nth-child(3), table.table_haichi > tbody > tr > td:nth-child(3) {
+    width: 28%;
+}
+
+table.table_haichi > thead > tr > th:nth-child(4), table.table_haichi > tbody > tr > td:nth-child(4) {
+    width: 12%;
+}
+
+table.table_haichi > thead > tr > th:nth-child(5), table.table_haichi > tbody > tr > td:nth-child(5) {
+    width: 12%;
+}
+
+table.table_haichi > thead > tr > th:nth-child(6), table.table_haichi > tbody > tr > td:nth-child(6) {
+    width: 12%;
+}
+
+table.table_haichi > thead > tr > th:nth-child(7), table.table_haichi > tbody > tr > td:nth-child(7) {
+    width: 12%;
+}
+
+
+table.table_kiki > thead > tr > th:nth-child(1), table.table_kiki > tbody > tr > td:nth-child(1) {
+    width: 20%;
+}
+
+table.table_kiki > thead > tr > th:nth-child(2), table.table_kiki > tbody > tr > td:nth-child(2) {
+    width: 80%;
 }
 
 .main_device {
@@ -48,7 +82,7 @@ h1.title {
     width: 100%;
     float: left;
     margin-top: 30px;
-    margin-bottom:  30px;
+    margin-bottom: 30px;
 }
 
 .on_device {
@@ -342,10 +376,6 @@ div#device2_current {
     margin-bottom: 35px;
 }
 
-    .dev2_item > p {
-        font-size: 20px;
-        font-weight: 500;
-    }
 
     .dev2_item input {
         width: 100%;
@@ -359,34 +389,20 @@ div#device2_current {
         margin-top: 0;
     }
 
+.dev2_item_left {
+    width: 40%;
+    float: left;
+}
+
+.dev2_item_right {
+    width: 40%;
+    float: right;
+}
+
 select.select {
     width: 100%;
     height: 40px !important;
     border: 2px solid #607D8B;
-}
-
-table.table {
-    border: 1px solid #ddd;
-}
-
-    table.table th {
-        border: 1px solid #ddd;
-    }
-
-    table.table tr {
-        border: none;
-    }
-
-.table > thead > tr > th {
-    border-bottom: 1px solid #ddd;
-}
-
-.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
-    border: 1px solid #607d8b;
-}
-
-.table > caption + thead > tr:first-child > td, .table > caption + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > th, .table > thead:first-child > tr:first-child > td, .table > thead:first-child > tr:first-child > th {
-    border-top: 1px solid #607d8b;
 }
 
 .table_list {
@@ -394,11 +410,6 @@ table.table {
     float: left;
     margin-top: 55px;
 }
-
-    .table_list tr td {
-        height: 35px;
-        font-size: 17px;
-    }
 
 button.btn {
     display: inline-block;
@@ -433,11 +444,14 @@ button.btn.btn-left1 {
     float: left;
     margin-left: 5%;
 }
+
 button.btn.btn-left2 {
     float: left;
     margin-left: 40%;
 }
+
 button.btn.btn-right {
     float: right;
     margin-right: 5%;
 }
+

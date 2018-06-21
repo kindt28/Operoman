@@ -1,0 +1,56 @@
+﻿@charset "UTF-8";
+
+* {
+    font-family: 'メイリオ', Meiryo, 'MS UI Gothic';
+}
+
+body {
+    margin: 0;
+}
+
+.wrap_site {
+    margin: 0 auto;
+    width: 95%;
+}
+
+h1.title {
+    margin-top: 30px;
+    text-align: center;
+}
+
+table.table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    background-color: #0070C0;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+    table.table > thead > tr > th {
+        border: 1px solid #A6A6A6;
+        color: white;
+        text-align: center;
+        font-size: 12pt;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        font-weight: normal;
+        /*border-left: none;*/
+    }
+
+    table.table > tbody > tr > td {
+        border: 1px solid #A6A6A6;
+        color: #000000;
+        background-color: #fff;
+        text-align: center;
+        font-size: 12pt;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        height: 30px;
+        /*border-left: none;*/
+    }
+
+        table.table > thead > tr > th:nth-child(1), table.table > tbody > tr > td:nth-child(1) {
+            /*border-left:none;*/
+        }

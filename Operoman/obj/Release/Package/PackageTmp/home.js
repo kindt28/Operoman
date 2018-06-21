@@ -40,7 +40,7 @@ function jspAddEvent() {
 // - 備　考：なし
 // -----------------------------------------------------------------
 function OnJspLoginClick(e) {
-    alert("a");
+    //alert("a");
     // ｳｪｲﾄ
     ttGuard.showWait();
     //
